@@ -1,0 +1,83 @@
+@media (max-width: 991px) {
+
+header { padding: 20px;}
+header .logo { max-width: 60px;}
+header ul { opacity: 0; position: absolute;}
+
+.toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('../icons/hamburger.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+    transition: 0.3s;
+    /* filter: invert(1); */
+}
+
+.toggle.active {
+
+    background: url('../icons/close.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header ul.navigation.active {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #0e0a14;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+header ul.navigation.active li {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+
+section { padding: 20px 20px 120px;}
+
+.site-content {
+
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.site-content .textArea { max-width: 100%;}
+.site-content .imgArea { max-width: 100%; justify-content: center;}
+
+.sosyal {
+
+    background-color: #2a3aff;
+    right: -20px !important;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.circle { clip-path: circle(400px at center bottom);}
+
+}
+
+
+
+
+@media (max-width: 375px) {
+
+.site-content .textArea h1 { margin-bottom: 1rem;}
+.site-content .imgArea img { max-width: 250px;}
+}
